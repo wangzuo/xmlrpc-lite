@@ -1,27 +1,41 @@
 # xmlrpc-lite
-[![Build Status](https://travis-ci.org/pqx/xmlrpc-lite.svg)](https://travis-ci.org/pqx/xmlrpc-lite) [![codecov.io](http://codecov.io/github/pqx/xmlrpc-lite/coverage.svg?branch=master)](http://codecov.io/github/pqx/xmlrpc-lite?branch=master)
+
+[![npm](https://img.shields.io/npm/v/xmlrpc-lite.svg)](https://www.npmjs.com/package/xmlrpc-lite)
+[![Build Status](https://travis-ci.org/pqx/xmlrpc-lite.svg?branch=master)](https://travis-ci.org/pqx/xmlrpc-lite)
+[![codecov](https://codecov.io/gh/pqx/xmlrpc-lite/branch/master/graph/badge.svg)](https://codecov.io/gh/pqx/xmlrpc-lite)
+[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 Simple xmlrpc client for node and browser
-- Object params support via `<struct>`
-- String type only
+
+* Object params support via `<struct>`
+* String type support only
 
 ### Installation
-``` sh
+
+```sh
 npm install xmlrpc-lite --save
 ```
+
 ### Example
-``` javascript
+
+```javascript
 // xmlrpc request to ipboard forum
 var Client = require('xmlrpc-lite');
 var t = new Client('http://forum/interface/board/index.php');
-t.call('loginUser', {
-  id: 'xxxx',
-  api_module: 'ipb',
-  api_key: 'xxxxxx'
-}, function(err, xml) {
-  if(err) throw err;
-  console.log(xml);
-});
+t.call(
+  'loginUser',
+  {
+    id: 'xxxx',
+    api_module: 'ipb',
+    api_key: 'xxxxxx'
+  },
+  function(err, xml) {
+    if (err) throw err;
+    console.log(xml);
+  }
+);
 ```
+
 ### License
+
 ISC
