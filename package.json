@@ -26,10 +26,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pqx/xmlrpc-lite.git"
+    "url": "git+https://github.com/wangzuo/xmlrpc-lite.git"
   },
   "bugs": {
-    "url": "https://github.com/pqx/xmlrpc-lite/issues"
+    "url": "https://github.com/wangzuo/xmlrpc-lite/issues"
   },
-  "homepage": "https://github.com/pqx/xmlrpc-lite#readme"
+  "homepage": "https://github.com/wangzuo/xmlrpc-lite#readme"
 }
